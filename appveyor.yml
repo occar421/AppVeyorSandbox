@@ -1,6 +1,6 @@
-version: 1.3.0.{build}
+version: 1.4.0.{build}
 environment:
-  stage: release
+  stage: beta
   release_notes: 'Not good!'
   solution_path: src\Analyzer1.sln
 pull_requests:
@@ -64,7 +64,7 @@ after_build:
 
     (Get-ChildItem $folder -Recurse).Where{ $_.Extension -eq ".nupkg"} | %{ Push-AppveyorArtifact $_.FullName -FileName $_.Name }
 deploy:
-  provider: GitHub
+- provider: GitHub
   tag: $(nupkg_version)
   release: $(nupkg_version)
   description: $(release_notes)
