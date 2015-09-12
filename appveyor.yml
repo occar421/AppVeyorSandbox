@@ -1,8 +1,8 @@
-version: 1.1.0.{build}
+version: 1.2.0.{build}
 environment:
   stage: alpha
+  release_notes: 'Not good!'
   solution_path: src\Analyzer1.sln
-  release_notes: 'It is fine today.'
 pull_requests:
   do_not_increment_build_number: true
 branches:
