@@ -31,7 +31,7 @@ before_build:
     $env:is_prelease = "true"
 
     if($STAGE -ne "release"){
-        $env:nupkg_version = $nupkg_version + "-" + $STAGE
+        $env:nupkg_version = $env:nupkg_version + "-" + $STAGE
 
         $env:is_prelease = "false"
     }
