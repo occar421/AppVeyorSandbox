@@ -1,6 +1,6 @@
-version: 1.3.0.{build}
+version: 1.4.0.{build}
 environment:
-  stage: release
+  stage: beta
   release_notes: 'Not good!'
   solution_path: src\Analyzer1.sln
 pull_requests:
@@ -28,12 +28,12 @@ before_build:
 
     $env:nupkg_version = $vs[0] + "." + $vs[1] + "." + $vs[2]
 
-    $env:is_prelease = "true"
+    $env:is_prerelease = "false"
 
-    if($STAGE -ne "release"){
+    if($STAGE -ne "release"){ # prerelease
         $env:nupkg_version = $env:nupkg_version + "-" + $STAGE
 
-        $env:is_prelease = "false"
+        $env:is_prerelease = "true"
     }
 
 
@@ -64,12 +64,12 @@ after_build:
 
     (Get-ChildItem $folder -Recurse).Where{ $_.Extension -eq ".nupkg"} | %{ Push-AppveyorArtifact $_.FullName -FileName $_.Name }
 deploy:
-  provider: GitHub
+- provider: GitHub
   tag: $(nupkg_version)
   release: $(nupkg_version)
   description: $(release_notes)
   auth_token:
     secure: ld1RBkNTi/7LQRJhZJXjATWL/TdysxJRPcTjyKVvsnLumE7ulNyIUy40eASxX4bv
-  prerelease: $(is_prelease)
+  prerelease: $(is_prerelease)
   on:
     branch: master
