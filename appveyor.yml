@@ -1,4 +1,4 @@
-version: 1.2.0.{build}
+version: 1.3.0.{build}
 environment:
   stage: alpha
   release_notes: 'Not good!'
@@ -67,10 +67,9 @@ deploy:
   provider: GitHub
   tag: $(nupkg_version)
   release: $(nupkg_version)
+  description: $(release_notes)
   auth_token:
     secure: ld1RBkNTi/7LQRJhZJXjATWL/TdysxJRPcTjyKVvsnLumE7ulNyIUy40eASxX4bv
-  draft: false
   prerelease: $(is_prelease)
   on:
     branch: master
-    appveyor_repo_tag: true
