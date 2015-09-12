@@ -1,7 +1,13 @@
-version: 1.0.0.{build}
+version: 1.1.0.{build}
 environment:
   stage: alpha
   solution_path: src\Analyzer1.sln
+  release_notes: 'It is fine today.'
+pull_requests:
+  do_not_increment_build_number: true
+branches:
+  only:
+  - master
 os: Visual Studio 2015
 configuration: Release
 platform: Any CPU
@@ -20,10 +26,14 @@ before_build:
 
     $vs = $VERSION -split "\."
 
-    $nupkgVersion = $vs[0] + "." + $vs[1] + "." + $vs[2]
+    $env:nupkg_version = $vs[0] + "." + $vs[1] + "." + $vs[2]
+
+    $env:is_prelease = "true"
 
     if($STAGE -ne "release"){
-        $nupkgVersion = $nupkgVersion + "-" + $STAGE
+        $env:nupkg_version = $env:nupkg_version + "-" + $STAGE
+
+        $env:is_prelease = "false"
     }
 
 
@@ -33,7 +43,9 @@ before_build:
 
     [xml]$xml = Get-Content $nuspec.FullName
 
-    $xml.package.metadata.version = $nupkgVersion
+    $xml.package.metadata.version = $env:nupkg_version
+
+    $xml.package.metadata.releaseNotes = $env:release_notes
 
     $xml.Save($nuspec.FullName)
 
@@ -52,8 +64,13 @@ after_build:
 
     (Get-ChildItem $folder -Recurse).Where{ $_.Extension -eq ".nupkg"} | %{ Push-AppveyorArtifact $_.FullName -FileName $_.Name }
 deploy:
-- provider: GitHub
-  release: bebe
+  provider: GitHub
+  tag: $(nupkg_version)
+  release: $(nupkg_version)
   auth_token:
     secure: ld1RBkNTi/7LQRJhZJXjATWL/TdysxJRPcTjyKVvsnLumE7ulNyIUy40eASxX4bv
-  prerelease: true
+  draft: false
+  prerelease: $(is_prelease)
+  on:
+    branch: master
+    appveyor_repo_tag: true
