@@ -28,12 +28,12 @@ before_build:
 
     $env:nupkg_version = $vs[0] + "." + $vs[1] + "." + $vs[2]
 
-    $env:is_prelease = "true"
+    $env:is_prerelease = "false"
 
-    if($STAGE -ne "release"){
+    if($STAGE -ne "release"){ # prerelease
         $env:nupkg_version = $env:nupkg_version + "-" + $STAGE
 
-        $env:is_prelease = "false"
+        $env:is_prerelease = "true"
     }
 
 
@@ -70,6 +70,6 @@ deploy:
   description: $(release_notes)
   auth_token:
     secure: ld1RBkNTi/7LQRJhZJXjATWL/TdysxJRPcTjyKVvsnLumE7ulNyIUy40eASxX4bv
-  prerelease: $(is_prelease)
+  prerelease: $(is_prerelease)
   on:
     branch: master
