@@ -1,6 +1,6 @@
 version: 1.3.0.{build}
 environment:
-  stage: alpha
+  stage: release
   release_notes: 'Not good!'
   solution_path: src\Analyzer1.sln
 pull_requests:
