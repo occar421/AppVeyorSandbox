@@ -1,7 +1,7 @@
-version: 1.4.0.{build}
+version: 2.0.0.{build}
 environment:
-  stage: release
-  release_notes: 'Not good!'
+  stage: alpha
+  release_notes: 'Stunning New.'
   solution_path: src\Analyzer1.sln
 pull_requests:
   do_not_increment_build_number: true
