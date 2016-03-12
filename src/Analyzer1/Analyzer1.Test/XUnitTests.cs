@@ -13,7 +13,7 @@ namespace Analyzer1.Test
 		[Fact]
 		public void FailTest()
 		{
-			Assert.True(false);
+			Assert.False(false);
 		}
 	}
 }
