@@ -70,7 +70,7 @@ after_test:
 - ps: >-
     $opencover = (Resolve-Path "src/packages/OpenCover.*/tools/OpenCover.Console.exe").ToString()
 
-    & $opencover -register:user -target:%xunit20%\xunit.console.x86.exe -targetargs:"src\Analyzer1\Analyzer1.Test\bin\Release\Analyzer1.Test.dll /noshadow /appveyor" -output:opencoverCoverage.xml
+    & $opencover -register:user -target:%xunit20%\xunit.console.x86.exe "-targetargs:""src\Analyzer1\Analyzer1.Test\bin\Release\Analyzer1.Test.dll"" /noshadow /appveyor" -output:opencoverCoverage.xml
 
     $coveralls = (Resolve-Path "src/packages/coveralls.net.*/tools/csmacnz.coveralls.exe").ToString()
 
