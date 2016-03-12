@@ -3,7 +3,6 @@ environment:
   stage: alpha
   release_notes: 'Stunning New.'
   solution_path: src\Analyzer1.sln
-  test_proj_dir: src\Analyzer1\Analyzer1.Test\
   COVERALLS_REPO_TOKEN:
     secure: iYa1LgPg9YAHaD3zagivsEDqeAE9fCkzw2ykOrVc5q+PNSjpauiX6pTFk9TnokrS
 pull_requests:
@@ -71,7 +70,7 @@ after_test:
 - ps: >-
     $opencover = (Resolve-Path "src/packages/OpenCover.*/tools/OpenCover.Console.exe").ToString()
 
-    & $opencover -register:user -target:xunit.console.clr4.exe "-targetargs:""$(test_proj_dir)bin\Release\Analyzer1.Tests.dll"" /noshadow /appveyor" -output:opencoverCoverage.xml
+    & $opencover -register:user -target:xunit.console.clr4.exe "-targetargs:""src\Analyzer1\Analyzer1.Test\bin\Release\Analyzer1.Tests.dll"" /noshadow /appveyor" -output:opencoverCoverage.xml
 
     $coveralls = (Resolve-Path "src/packages/coveralls.net.*/tools/csmacnz.coveralls.exe").ToString()
 
