@@ -66,11 +66,11 @@ after_build:
     $folder = $env:APPVEYOR_BUILD_FOLDER + "\" + ($env:solution_path -split "\.")[0]
 
     (Get-ChildItem $folder -Recurse).Where{ $_.Extension -eq ".nupkg"} | %{ Push-AppveyorArtifact $_.FullName -FileName $_.Name }
-after_test:
+test_script:
 - ps: >-
     $opencover = (Resolve-Path "src/packages/OpenCover.*/tools/OpenCover.Console.exe").ToString()
 
-    & $opencover -register:user -target:%xunit20%\xunit.console.x86.exe "-targetargs:""src\Analyzer1\Analyzer1.Test\bin\Release\Analyzer1.Test.dll"" -noshadow -appveyor" -output:opencoverCoverage.xml
+    & $opencover -register:user -target:%xunit20%\xunit.console.x86.exe "-targetargs:""src\Analyzer1\Analyzer1.Test\bin\Release\Analyzer1.Test.dll"" -noshadow -appveyor" -filter:"+[Analyzer1*]* -[Analyzer1.Test*]*" -output:opencoverCoverage.xml
 
     $coveralls = (Resolve-Path "src/packages/coveralls.net.*/tools/csmacnz.coveralls.exe").ToString()
 
