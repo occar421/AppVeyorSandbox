@@ -75,12 +75,12 @@ test_script:
 
     $coveralls = (Resolve-Path "src/packages/coveralls.net.*/tools/csmacnz.coveralls.exe").ToString()
 
-    $targetargs = """$env:test_dll_dir\Analyzer1.dll"" ""$env:test_dll_dir\Analyzer1.Test.dll"" -noshadow -appveyor"
+    $targetargs = """Analyzer1.dll"" ""Analyzer1.Test.dll"" -noshadow -appveyor"
 
     $filter = "+[Analyzer1*]* -[Analyzer1.Test*]*"
 
 
-    & $opencover -register:user -target:$runner "-targetargs:$targetargs" "-filter:$filter" -output:opencoverCoverage.xml
+    & $opencover -register:user -target:$runner "-targetargs:$targetargs" -targetdir:$env:test_dll_dir "-filter:$filter" -hideskipped:Filter -output:opencoverCoverage.xml
 
     & $coveralls --opencover -i opencoverCoverage.xml --repoToken $env:COVERALLS_REPO_TOKEN --commitId $env:APPVEYOR_REPO_COMMIT --commitBranch $env:APPVEYOR_REPO_BRANCH --commitAuthor $env:APPVEYOR_REPO_COMMIT_AUTHOR --commitEmail $env:APPVEYOR_REPO_COMMIT_AUTHOR_EMAIL --commitMessage $env:APPVEYOR_REPO_COMMIT_MESSAGE --jobId $env:APPVEYOR_JOB_ID
 
