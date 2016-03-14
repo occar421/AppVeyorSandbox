@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoverageSession xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Summary numSequencePoints="40" visitedSequencePoints="0" numBranchPoints="20" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="5" minCyclomaticComplexity="1" visitedClasses="0" numClasses="6" visitedMethods="0" numMethods="16" />
+  <Modules>
+    <Module skippedDueTo="Filter" hash="CB-03-CE-A4-71-2F-47-F8-B0-DA-13-71-CB-AB-6E-F6-15-C2-96-6B">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll</ModulePath>
+      <ModuleTime>2016-02-24T02:12:40.8097502Z</ModuleTime>
+      <ModuleName>mscorlib</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="53-48-99-D4-4C-8B-70-6B-9F-95-2B-9F-F6-F6-19-02-64-0B-F4-69">
+      <ModulePath>C:\Users\TakahiroOkada\Documents\GitHub\AppVeyorSandbox\src\packages\xunit.runner.console.2.1.0\tools\xunit.console.x86.exe</ModulePath>
+      <ModuleTime>2016-03-12T07:13:04.8786431Z</ModuleTime>
+      <ModuleName>xunit.console.x86</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="2C-BE-1B-C3-02-35-ED-A0-CC-7C-AB-BA-F1-C5-8D-DE-79-03-01-9A">
+      <ModulePath>C:\Users\TakahiroOkada\Documents\GitHub\AppVeyorSandbox\src\packages\xunit.runner.console.2.1.0\tools\xunit.runner.utility.desktop.dll</ModulePath>
+      <ModuleTime>2016-03-12T07:13:04.8951532Z</ModuleTime>
+      <ModuleName>xunit.runner.utility.desktop</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="9E-A9-5D-7F-86-82-4D-02-7D-07-AD-C0-17-06-5D-73-8F-1F-28-44">
+      <ModulePath>C:\Users\TakahiroOkada\Documents\GitHub\AppVeyorSandbox\src\packages\xunit.runner.console.2.1.0\tools\xunit.abstractions.dll</ModulePath>
+      <ModuleTime>2016-03-12T07:13:04.864644Z</ModuleTime>
+      <ModuleName>xunit.abstractions</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="6D-E2-C1-DC-D0-43-62-D5-0D-26-7F-96-9C-67-32-F2-C7-1C-04-6F">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll</ModulePath>
+      <ModuleTime>2015-10-30T07:19:34.0182785Z</ModuleTime>
+      <ModuleName>System.Core</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="AA-84-EA-4A-FD-23-17-44-E5-3B-73-2A-3D-B6-0E-17-EE-E1-53-6A">
+      <ModulePath>C:\Users\TakahiroOkada\Documents\GitHub\AppVeyorSandbox\src\packages\xunit.runner.console.2.1.0\tools\xunit.runner.reporters.desktop.dll</ModulePath>
+      <ModuleTime>2016-03-12T07:13:04.8901529Z</ModuleTime>
+      <ModuleName>xunit.runner.reporters.desktop</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="4F-21-10-E6-18-64-7D-61-84-1D-01-2E-E8-10-CE-5F-73-21-43-95">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Net.Http\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Net.Http.dll</ModulePath>
+      <ModuleTime>2015-10-30T07:19:38.1276408Z</ModuleTime>
+      <ModuleName>System.Net.Http</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="14-EE-03-D7-75-4C-A4-7D-7D-56-1B-38-DD-F3-EE-4C-FD-B8-7F-75">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</ModulePath>
+      <ModuleTime>2015-10-30T07:19:38.0807661Z</ModuleTime>
+      <ModuleName>System</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="A4-28-7D-C5-05-C4-B2-93-A0-DF-75-C3-4A-93-BE-B3-A7-C2-8D-5D">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\System.Web\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.dll</ModulePath>
+      <ModuleTime>2016-02-24T02:12:41.9348548Z</ModuleTime>
+      <ModuleName>System.Web</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="56-D1-AA-7E-F9-7F-3D-75-76-44-CF-28-3A-FB-E4-35-1F-3F-9D-AF">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\mscorlib.resources\v4.0_4.0.0.0_ja_b77a5c561934e089\mscorlib.resources.dll</ModulePath>
+      <ModuleTime>2015-10-30T18:18:41.9593881Z</ModuleTime>
+      <ModuleName>mscorlib.resources</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="49-F6-B9-FA-89-1F-12-21-02-F2-B4-EB-98-8E-A0-5F-9D-8D-B9-EB">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll</ModulePath>
+      <ModuleTime>2015-10-30T07:19:36.3463962Z</ModuleTime>
+      <ModuleName>System.Configuration</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="14-44-50-38-34-98-5F-C6-45-8B-50-B5-CF-D7-E1-0A-28-8F-5E-E8">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll</ModulePath>
+      <ModuleTime>2016-01-23T02:45:41.3556585Z</ModuleTime>
+      <ModuleName>System.Xml</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="1D-43-36-2D-8B-2E-33-CE-61-DD-23-FB-CF-4A-31-FA-99-EF-8A-A3">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Xml.Linq\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.Linq.dll</ModulePath>
+      <ModuleTime>2015-10-30T07:19:31.658911Z</ModuleTime>
+      <ModuleName>System.Xml.Linq</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="2C-BE-1B-C3-02-35-ED-A0-CC-7C-AB-BA-F1-C5-8D-DE-79-03-01-9A">
+      <ModulePath>C:\Users\TakahiroOkada\AppData\Local\Temp\3bf50da1-c792-48a4-8a20-881f57bd1ce1\3bf50da1-c792-48a4-8a20-881f57bd1ce1\assembly\dl3\55be158c\ecd6089f_2e7cd101\xunit.runner.utility.desktop.dll</ModulePath>
+      <ModuleTime>2016-03-13T23:46:58.711298Z</ModuleTime>
+      <ModuleName>xunit.runner.utility.desktop</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="6D-E2-C1-DC-D0-43-62-D5-0D-26-7F-96-9C-67-32-F2-C7-1C-04-6F">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll</ModulePath>
+      <ModuleTime>2015-10-30T07:19:34.0182785Z</ModuleTime>
+      <ModuleName>System.Core</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="14-EE-03-D7-75-4C-A4-7D-7D-56-1B-38-DD-F3-EE-4C-FD-B8-7F-75">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</ModulePath>
+      <ModuleTime>2015-10-30T07:19:38.0807661Z</ModuleTime>
+      <ModuleName>System</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="">
+      <ModulePath>RefEmit_InMemoryManifestModule</ModulePath>
+      <ModuleTime>0001-01-01T00:00:00</ModuleTime>
+      <ModuleName>Anonymously Hosted DynamicMethods Assembly</ModuleName>
+      <Classes />
+    </Module>
+    <Module hash="F2-B0-DE-D7-85-2C-05-2E-F8-AA-C2-1A-5A-F0-0F-CB-83-14-52-58">
+      <Summary numSequencePoints="40" visitedSequencePoints="0" numBranchPoints="20" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="5" minCyclomaticComplexity="1" visitedClasses="0" numClasses="6" visitedMethods="0" numMethods="16" />
+      <ModulePath>C:\Users\TakahiroOkada\Documents\GitHub\AppVeyorSandbox\src\Analyzer1\Analyzer1\bin\Release\Analyzer1.dll</ModulePath>
+      <ModuleTime>2016-03-13T23:44:53.4056015Z</ModuleTime>
+      <ModuleName>Analyzer1</ModuleName>
+      <Files>
+        <File uid="1" fullPath="C:\Users\TakahiroOkada\Documents\GitHub\AppVeyorSandbox\src\Analyzer1\Analyzer1\CodeFixProvider.cs" />
+        <File uid="5" fullPath="C:\Users\TakahiroOkada\Documents\GitHub\AppVeyorSandbox\src\Analyzer1\Analyzer1\DiagnosticAnalyzer.cs" />
+        <File uid="6" fullPath="C:\Users\TakahiroOkada\Documents\GitHub\AppVeyorSandbox\src\Analyzer1\Analyzer1\Resources.Designer.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+          <FullName>&lt;Module&gt;</FullName>
+          <Methods />
+        </Class>
+        <Class>
+          <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="2" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="2" />
+          <FullName>Analyzer1.Analyzer1CodeFixProvider</FullName>
+          <Methods>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663297</MetadataToken>
+              <Name>System.Collections.Immutable.ImmutableArray`1&lt;System.String&gt; Analyzer1.Analyzer1CodeFixProvider::get_FixableDiagnosticIds()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="1" ordinal="0" offset="0" sl="25" sc="10" el="25" ec="71" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="1" ordinal="0" offset="0" sl="25" sc="10" el="25" ec="71" bec="0" bev="0" fileid="1" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663298</MetadataToken>
+              <Name>Microsoft.CodeAnalysis.CodeFixes.FixAllProvider Analyzer1.Analyzer1CodeFixProvider::GetFixAllProvider()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="2" ordinal="0" offset="0" sl="30" sc="4" el="30" ec="47" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="2" ordinal="0" offset="0" sl="30" sc="4" el="30" ec="47" bec="0" bev="0" fileid="1" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663299</MetadataToken>
+              <Name>System.Threading.Tasks.Task Analyzer1.Analyzer1CodeFixProvider::RegisterCodeFixesAsync(Microsoft.CodeAnalysis.CodeFixes.CodeFixContext)</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="3" ordinal="0" offset="0" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663300</MetadataToken>
+              <Name>System.Threading.Tasks.Task`1&lt;Microsoft.CodeAnalysis.Solution&gt; Analyzer1.Analyzer1CodeFixProvider::MakeUppercaseAsync(Microsoft.CodeAnalysis.Document,Microsoft.CodeAnalysis.CSharp.Syntax.TypeDeclarationSyntax,System.Threading.CancellationToken)</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="4" ordinal="0" offset="0" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663301</MetadataToken>
+              <Name>System.Void Analyzer1.Analyzer1CodeFixProvider::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="5" ordinal="0" offset="0" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>Analyzer1.Analyzer1CodeFixProvider/&lt;&gt;c__DisplayClass4_0</FullName>
+          <Methods>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663314</MetadataToken>
+              <Name>System.Void Analyzer1.Analyzer1CodeFixProvider/&lt;&gt;c__DisplayClass4_0::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="6" ordinal="0" offset="0" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663315</MetadataToken>
+              <Name>System.Threading.Tasks.Task`1&lt;Microsoft.CodeAnalysis.Solution&gt; Analyzer1.Analyzer1CodeFixProvider/&lt;&gt;c__DisplayClass4_0::&lt;RegisterCodeFixesAsync&gt;b__0(System.Threading.CancellationToken)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="7" ordinal="0" offset="0" sl="48" sc="34" el="48" ec="86" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="7" ordinal="0" offset="0" sl="48" sc="34" el="48" ec="86" bec="0" bev="0" fileid="1" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="5" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="3" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>Analyzer1.Analyzer1CodeFixProvider/&lt;RegisterCodeFixesAsync&gt;d__4</FullName>
+          <Methods>
+            <Method visited="false" cyclomaticComplexity="3" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="5" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="3" minCyclomaticComplexity="3" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663316</MetadataToken>
+              <Name>System.Void Analyzer1.Analyzer1CodeFixProvider/&lt;RegisterCodeFixesAsync&gt;d__4::MoveNext()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="8" ordinal="0" offset="58" sl="35" sc="4" el="35" ec="106" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="9" ordinal="1" offset="202" sl="38" sc="4" el="38" ec="49" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="10" ordinal="2" offset="224" sl="39" sc="4" el="39" ec="56" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="11" ordinal="3" offset="236" sl="42" sc="4" el="42" ec="125" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="12" ordinal="4" offset="286" sl="45" sc="4" el="50" ec="17" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="16" ordinal="0" offset="0" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663317</MetadataToken>
+              <Name>System.Void Analyzer1.Analyzer1CodeFixProvider/&lt;RegisterCodeFixesAsync&gt;d__4::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="17" ordinal="0" offset="0" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="5" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>Analyzer1.Analyzer1CodeFixProvider/&lt;MakeUppercaseAsync&gt;d__5</FullName>
+          <Methods>
+            <Method visited="false" cyclomaticComplexity="5" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="5" minCyclomaticComplexity="5" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663318</MetadataToken>
+              <Name>System.Void Analyzer1.Analyzer1CodeFixProvider/&lt;MakeUppercaseAsync&gt;d__5::MoveNext()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="18" ordinal="0" offset="17" sl="56" sc="4" el="56" ec="46" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="19" ordinal="1" offset="29" sl="57" sc="4" el="57" ec="58" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="20" ordinal="2" offset="47" sl="60" sc="4" el="60" ec="80" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="21" ordinal="3" offset="160" sl="61" sc="4" el="61" ec="82" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="22" ordinal="4" offset="178" sl="64" sc="4" el="64" ec="53" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="23" ordinal="5" offset="194" sl="65" sc="4" el="65" ec="55" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="24" ordinal="6" offset="206" sl="66" sc="4" el="66" ec="154" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="25" ordinal="7" offset="345" sl="69" sc="4" el="69" ec="23" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="33" ordinal="0" offset="0" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663319</MetadataToken>
+              <Name>System.Void Analyzer1.Analyzer1CodeFixProvider/&lt;MakeUppercaseAsync&gt;d__5::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="34" ordinal="0" offset="0" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="12" visitedSequencePoints="0" numBranchPoints="6" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="4" />
+          <FullName>Analyzer1.Analyzer1Analyzer</FullName>
+          <Methods>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="false" isStatic="false" isGetter="true" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663302</MetadataToken>
+              <Name>System.Collections.Immutable.ImmutableArray`1&lt;Microsoft.CodeAnalysis.DiagnosticDescriptor&gt; Analyzer1.Analyzer1Analyzer::get_SupportedDiagnostics()</Name>
+              <FileRef uid="5" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="35" ordinal="0" offset="0" sl="26" sc="85" el="26" ec="120" bec="0" bev="0" fileid="5" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="35" ordinal="0" offset="0" sl="26" sc="85" el="26" ec="120" bec="0" bev="0" fileid="5" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663303</MetadataToken>
+              <Name>System.Void Analyzer1.Analyzer1Analyzer::Initialize(Microsoft.CodeAnalysis.Diagnostics.AnalysisContext)</Name>
+              <FileRef uid="5" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="36" ordinal="0" offset="0" sl="31" sc="4" el="31" ec="70" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="0" uspid="37" ordinal="1" offset="29" sl="32" sc="3" el="32" ec="4" bec="0" bev="0" fileid="5" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="36" ordinal="0" offset="0" sl="31" sc="4" el="31" ec="70" bec="0" bev="0" fileid="5" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="2" nPathComplexity="2" sequenceCoverage="0" branchCoverage="0" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="5" visitedSequencePoints="0" numBranchPoints="3" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663304</MetadataToken>
+              <Name>System.Void Analyzer1.Analyzer1Analyzer::AnalyzeSymbol(Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext)</Name>
+              <FileRef uid="5" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="38" ordinal="0" offset="0" sl="37" sc="4" el="37" ec="59" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="0" uspid="39" ordinal="1" offset="13" sl="40" sc="4" el="40" ec="61" bec="2" bev="0" fileid="5" />
+                <SequencePoint vc="0" uspid="40" ordinal="2" offset="43" sl="43" sc="5" el="43" ec="98" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="0" uspid="41" ordinal="3" offset="84" sl="45" sc="5" el="45" ec="42" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="0" uspid="42" ordinal="4" offset="92" sl="47" sc="3" el="47" ec="4" bec="0" bev="0" fileid="5" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="43" ordinal="0" offset="41" sl="40" path="0" offsetend="43" fileid="5" />
+                <BranchPoint vc="0" uspid="44" ordinal="1" offset="41" sl="40" path="1" offsetend="92" fileid="5" />
+              </BranchPoints>
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="38" ordinal="0" offset="0" sl="37" sc="4" el="37" ec="59" bec="0" bev="0" fileid="5" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+              <MetadataToken>100663305</MetadataToken>
+              <Name>System.Void Analyzer1.Analyzer1Analyzer::.ctor()</Name>
+              <SequencePoints />
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="45" ordinal="0" offset="0" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="true" isStatic="true" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663306</MetadataToken>
+              <Name>System.Void Analyzer1.Analyzer1Analyzer::.cctor()</Name>
+              <FileRef uid="5" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="46" ordinal="0" offset="0" sl="19" sc="3" el="19" ec="162" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="0" uspid="47" ordinal="1" offset="30" sl="20" sc="3" el="20" ec="178" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="0" uspid="48" ordinal="2" offset="60" sl="21" sc="3" el="21" ec="174" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="0" uspid="49" ordinal="3" offset="90" sl="24" sc="3" el="24" ec="197" bec="0" bev="0" fileid="5" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="46" ordinal="0" offset="0" sl="19" sc="3" el="19" ec="162" bec="0" bev="0" fileid="5" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="12" visitedSequencePoints="0" numBranchPoints="9" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="7" />
+          <FullName>Analyzer1.Resources</FullName>
+          <Methods>
+            <Method visited="false" cyclomaticComplexity="2" nPathComplexity="2" sequenceCoverage="0" branchCoverage="0" isConstructor="false" isStatic="true" isGetter="true" isSetter="false">
+              <Summary numSequencePoints="4" visitedSequencePoints="0" numBranchPoints="3" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663308</MetadataToken>
+              <Name>System.Resources.ResourceManager Analyzer1.Resources::get_ResourceManager()</Name>
+              <FileRef uid="6" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="50" ordinal="0" offset="0" sl="47" sc="5" el="47" ec="51" bec="2" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="51" ordinal="1" offset="7" sl="49" sc="6" el="49" ec="164" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="52" ordinal="2" offset="37" sl="50" sc="6" el="50" ec="25" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="53" ordinal="3" offset="42" sl="52" sc="5" el="52" ec="24" bec="0" bev="0" fileid="6" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="54" ordinal="0" offset="5" sl="47" path="0" offsetend="7" fileid="6" />
+                <BranchPoint vc="0" uspid="55" ordinal="1" offset="5" sl="47" path="1" offsetend="42" fileid="6" />
+              </BranchPoints>
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="50" ordinal="0" offset="0" sl="47" sc="5" el="47" ec="51" bec="2" bev="0" fileid="6" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="false" isStatic="true" isGetter="true" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663309</MetadataToken>
+              <Name>System.Globalization.CultureInfo Analyzer1.Resources::get_Culture()</Name>
+              <FileRef uid="6" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="56" ordinal="0" offset="0" sl="65" sc="5" el="65" ec="28" bec="0" bev="0" fileid="6" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="56" ordinal="0" offset="0" sl="65" sc="5" el="65" ec="28" bec="0" bev="0" fileid="6" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="false" isStatic="true" isGetter="false" isSetter="true">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663310</MetadataToken>
+              <Name>System.Void Analyzer1.Resources::set_Culture(System.Globalization.CultureInfo)</Name>
+              <FileRef uid="6" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="57" ordinal="0" offset="0" sl="69" sc="5" el="69" ec="29" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="58" ordinal="1" offset="6" sl="70" sc="4" el="70" ec="5" bec="0" bev="0" fileid="6" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="57" ordinal="0" offset="0" sl="69" sc="5" el="69" ec="29" bec="0" bev="0" fileid="6" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="false" isStatic="true" isGetter="true" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663311</MetadataToken>
+              <Name>System.String Analyzer1.Resources::get_AnalyzerDescription()</Name>
+              <FileRef uid="6" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="59" ordinal="0" offset="0" sl="80" sc="5" el="80" ec="78" bec="0" bev="0" fileid="6" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="59" ordinal="0" offset="0" sl="80" sc="5" el="80" ec="78" bec="0" bev="0" fileid="6" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="false" isStatic="true" isGetter="true" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663312</MetadataToken>
+              <Name>System.String Analyzer1.Resources::get_AnalyzerMessageFormat()</Name>
+              <FileRef uid="6" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="60" ordinal="0" offset="0" sl="91" sc="5" el="91" ec="80" bec="0" bev="0" fileid="6" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="60" ordinal="0" offset="0" sl="91" sc="5" el="91" ec="80" bec="0" bev="0" fileid="6" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="false" isStatic="true" isGetter="true" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663313</MetadataToken>
+              <Name>System.String Analyzer1.Resources::get_AnalyzerTitle()</Name>
+              <FileRef uid="6" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="61" ordinal="0" offset="0" sl="102" sc="5" el="102" ec="72" bec="0" bev="0" fileid="6" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="61" ordinal="0" offset="0" sl="102" sc="5" el="102" ec="72" bec="0" bev="0" fileid="6" />
+            </Method>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0" branchCoverage="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="1" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100663307</MetadataToken>
+              <Name>System.Void Analyzer1.Resources::.ctor()</Name>
+              <FileRef uid="6" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="62" ordinal="0" offset="0" sl="35" sc="3" el="35" ec="23" bec="0" bev="0" fileid="6" />
+                <SequencePoint vc="0" uspid="63" ordinal="1" offset="6" sl="37" sc="3" el="37" ec="4" bec="0" bev="0" fileid="6" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="0" uspid="62" ordinal="0" offset="0" sl="35" sc="3" el="35" ec="23" bec="0" bev="0" fileid="6" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+    <Module skippedDueTo="Filter" hash="BC-7B-32-7E-3E-36-53-9E-4D-AA-4E-5B-B4-19-E7-43-BE-B4-5F-42">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Runtime\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Runtime.dll</ModulePath>
+      <ModuleTime>2015-10-30T07:19:38.1276408Z</ModuleTime>
+      <ModuleName>System.Runtime</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="F5-60-6B-AD-8D-F6-AE-33-0B-82-DC-5F-7D-DA-19-9A-AB-05-04-E2">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Threading.Tasks\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Threading.Tasks.dll</ModulePath>
+      <ModuleTime>2015-10-30T07:19:36.221397Z</ModuleTime>
+      <ModuleName>System.Threading.Tasks</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="2C-BE-1B-C3-02-35-ED-A0-CC-7C-AB-BA-F1-C5-8D-DE-79-03-01-9A">
+      <ModulePath>C:\Users\TakahiroOkada\AppData\Local\Temp\edfe3739-2d67-4354-b826-ba5460656926\edfe3739-2d67-4354-b826-ba5460656926\assembly\dl3\d33a9e88\ecd6089f_2e7cd101\xunit.runner.utility.desktop.dll</ModulePath>
+      <ModuleTime>2016-03-13T23:46:59.5263163Z</ModuleTime>
+      <ModuleName>xunit.runner.utility.desktop</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="6D-E2-C1-DC-D0-43-62-D5-0D-26-7F-96-9C-67-32-F2-C7-1C-04-6F">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll</ModulePath>
+      <ModuleTime>2015-10-30T07:19:34.0182785Z</ModuleTime>
+      <ModuleName>System.Core</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="14-EE-03-D7-75-4C-A4-7D-7D-56-1B-38-DD-F3-EE-4C-FD-B8-7F-75">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</ModulePath>
+      <ModuleTime>2015-10-30T07:19:38.0807661Z</ModuleTime>
+      <ModuleName>System</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="">
+      <ModulePath>RefEmit_InMemoryManifestModule</ModulePath>
+      <ModuleTime>0001-01-01T00:00:00</ModuleTime>
+      <ModuleName>Anonymously Hosted DynamicMethods Assembly</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="C9-00-F0-65-36-2C-F1-51-5B-30-E9-49-EF-79-CE-1E-D0-B4-DA-17">
+      <ModulePath>C:\Users\TakahiroOkada\Documents\GitHub\AppVeyorSandbox\src\Analyzer1\Analyzer1.Test\bin\Release\Analyzer1.Test.dll</ModulePath>
+      <ModuleTime>2016-03-13T23:44:55.8833069Z</ModuleTime>
+      <ModuleName>Analyzer1.Test</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="F4-48-D0-1F-A5-88-2A-3B-2B-76-7A-67-68-F5-FB-35-5D-25-7D-4E">
+      <ModulePath>C:\Users\TakahiroOkada\Documents\GitHub\AppVeyorSandbox\src\Analyzer1\Analyzer1.Test\bin\Release\Microsoft.CodeAnalysis.dll</ModulePath>
+      <ModuleTime>2015-08-17T06:31:35.33821Z</ModuleTime>
+      <ModuleName>Microsoft.CodeAnalysis</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="BC-7B-32-7E-3E-36-53-9E-4D-AA-4E-5B-B4-19-E7-43-BE-B4-5F-42">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Runtime\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Runtime.dll</ModulePath>
+      <ModuleTime>2015-10-30T07:19:38.1276408Z</ModuleTime>
+      <ModuleName>System.Runtime</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="51-60-07-3A-41-C0-01-C6-0C-80-56-7D-83-63-89-31-36-5F-A9-FE">
+      <ModulePath>C:\Users\TakahiroOkada\Documents\GitHub\AppVeyorSandbox\src\Analyzer1\Analyzer1.Test\bin\Release\xunit.execution.desktop.dll</ModulePath>
+      <ModuleTime>2016-03-12T07:07:20.9480347Z</ModuleTime>
+      <ModuleName>xunit.execution.desktop</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="9E-A9-5D-7F-86-82-4D-02-7D-07-AD-C0-17-06-5D-73-8F-1F-28-44">
+      <ModulePath>C:\Users\TakahiroOkada\Documents\GitHub\AppVeyorSandbox\src\Analyzer1\Analyzer1.Test\bin\Release\xunit.abstractions.dll</ModulePath>
+      <ModuleTime>2016-03-12T07:10:30.9215568Z</ModuleTime>
+      <ModuleName>xunit.abstractions</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="14-EE-03-D7-75-4C-A4-7D-7D-56-1B-38-DD-F3-EE-4C-FD-B8-7F-75">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</ModulePath>
+      <ModuleTime>2015-10-30T07:19:38.0807661Z</ModuleTime>
+      <ModuleName>System</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="C9-00-F0-65-36-2C-F1-51-5B-30-E9-49-EF-79-CE-1E-D0-B4-DA-17">
+      <ModulePath>C:\Users\TakahiroOkada\Documents\GitHub\AppVeyorSandbox\src\Analyzer1\Analyzer1.Test\bin\Release\Analyzer1.Test.dll</ModulePath>
+      <ModuleTime>2016-03-13T23:44:55.8833069Z</ModuleTime>
+      <ModuleName>Analyzer1.Test</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="2C-BE-1B-C3-02-35-ED-A0-CC-7C-AB-BA-F1-C5-8D-DE-79-03-01-9A">
+      <ModulePath>C:\Users\TakahiroOkada\Documents\GitHub\AppVeyorSandbox\src\Analyzer1\Analyzer1.Test\bin\Release\xunit.runner.utility.desktop.dll</ModulePath>
+      <ModuleTime>2016-03-12T07:10:30.9275578Z</ModuleTime>
+      <ModuleName>xunit.runner.utility.desktop</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="9F-06-B1-CA-CB-A0-C1-4D-45-F5-AA-8F-72-C0-DF-0F-F4-EF-29-CF">
+      <ModulePath>C:\Users\TakahiroOkada\Documents\GitHub\AppVeyorSandbox\src\Analyzer1\Analyzer1.Test\bin\Release\xunit.core.dll</ModulePath>
+      <ModuleTime>2016-03-12T07:07:19.114667Z</ModuleTime>
+      <ModuleName>xunit.core</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="6D-E2-C1-DC-D0-43-62-D5-0D-26-7F-96-9C-67-32-F2-C7-1C-04-6F">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll</ModulePath>
+      <ModuleTime>2015-10-30T07:19:34.0182785Z</ModuleTime>
+      <ModuleName>System.Core</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="BC-7B-32-7E-3E-36-53-9E-4D-AA-4E-5B-B4-19-E7-43-BE-B4-5F-42">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Runtime\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Runtime.dll</ModulePath>
+      <ModuleTime>2015-10-30T07:19:38.1276408Z</ModuleTime>
+      <ModuleName>System.Runtime</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="F4-48-D0-1F-A5-88-2A-3B-2B-76-7A-67-68-F5-FB-35-5D-25-7D-4E">
+      <ModulePath>C:\Users\TakahiroOkada\Documents\GitHub\AppVeyorSandbox\src\Analyzer1\Analyzer1.Test\bin\Release\Microsoft.CodeAnalysis.dll</ModulePath>
+      <ModuleTime>2015-08-17T06:31:35.33821Z</ModuleTime>
+      <ModuleName>Microsoft.CodeAnalysis</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="9C-BD-10-0D-B6-DF-EE-2B-EB-27-DA-26-68-CD-C4-4A-48-7F-7B-09">
+      <ModulePath>C:\WINDOWS\assembly\GAC_MSIL\Microsoft.VisualStudio.QualityTools.UnitTestFramework\10.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</ModulePath>
+      <ModuleTime>2015-11-29T07:49:58.6384349Z</ModuleTime>
+      <ModuleName>Microsoft.VisualStudio.QualityTools.UnitTestFramework</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="F5-60-6B-AD-8D-F6-AE-33-0B-82-DC-5F-7D-DA-19-9A-AB-05-04-E2">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Threading.Tasks\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Threading.Tasks.dll</ModulePath>
+      <ModuleTime>2015-10-30T07:19:36.221397Z</ModuleTime>
+      <ModuleName>System.Threading.Tasks</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="D6-38-FE-14-5D-7E-5B-87-CF-F2-92-C0-72-C3-10-A4-1F-85-AB-76">
+      <ModulePath>C:\Users\TakahiroOkada\Documents\GitHub\AppVeyorSandbox\src\Analyzer1\Analyzer1.Test\bin\Release\Microsoft.CodeAnalysis.Workspaces.dll</ModulePath>
+      <ModuleTime>2015-08-17T06:31:37.5118857Z</ModuleTime>
+      <ModuleName>Microsoft.CodeAnalysis.Workspaces</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="AE-95-47-82-5C-76-63-DD-55-AB-E1-31-DF-B4-AC-41-59-CB-2E-18">
+      <ModulePath>C:\Users\TakahiroOkada\Documents\GitHub\AppVeyorSandbox\src\Analyzer1\Analyzer1.Test\bin\Release\System.Collections.Immutable.dll</ModulePath>
+      <ModuleTime>2015-08-17T06:31:38.0952742Z</ModuleTime>
+      <ModuleName>System.Collections.Immutable</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="58-96-1B-9B-46-25-3F-DA-DE-29-73-BB-93-35-54-6A-34-CE-62-F0">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Collections\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Collections.dll</ModulePath>
+      <ModuleTime>2015-10-30T07:19:34.2214033Z</ModuleTime>
+      <ModuleName>System.Collections</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="07-45-D5-E5-64-A5-50-1F-70-A0-AC-85-75-89-96-B5-69-A5-81-0F">
+      <ModulePath>C:\Users\TakahiroOkada\Documents\GitHub\AppVeyorSandbox\src\Analyzer1\Analyzer1.Test\bin\Release\xunit.assert.dll</ModulePath>
+      <ModuleTime>2016-03-12T07:07:17.7983001Z</ModuleTime>
+      <ModuleName>xunit.assert</ModuleName>
+      <Classes />
+    </Module>
+  </Modules>
+</CoverageSession>

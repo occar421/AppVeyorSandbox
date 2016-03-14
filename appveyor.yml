@@ -3,6 +3,7 @@ environment:
   stage: alpha
   release_notes: 'Stunning New.'
   solution_path: src\Analyzer1.sln
+  test_dll_dir: src\Analyzer1\Analyzer1.Test\bin\Release
   COVERALLS_REPO_TOKEN:
     secure: iYa1LgPg9YAHaD3zagivsEDqeAE9fCkzw2ykOrVc5q+PNSjpauiX6pTFk9TnokrS
 pull_requests:
@@ -70,12 +71,18 @@ test_script:
 - ps: >-
     $opencover = (Resolve-Path "src/packages/OpenCover.*/tools/OpenCover.Console.exe").ToString()
 
-    & $opencover -register:user -target:src\packages\xunit.runner.console.2.1.0\tools\xunit.console.x86.exe "-targetargs:""src\Analyzer1\Analyzer1\bin\Release\Analyzer1.dll src\Analyzer1\Analyzer1.Test\bin\Release\Analyzer1.Test.dll"" -noshadow -appveyor" -filter:"+[Analyzer1*]*" -output:opencoverCoverage.xml
+    $runner = (Resolve-Path "src\packages\xunit.runner.console.*\tools\xunit.console.x86.exe").ToString()
 
     $coveralls = (Resolve-Path "src/packages/coveralls.net.*/tools/csmacnz.coveralls.exe").ToString()
 
-    & $coveralls --opencover -i opencoverCoverage.xml --repoToken $env:COVERALLS_REPO_TOKEN --commitId $env:APPVEYOR_REPO_COMMIT --commitBranch $env:APPVEYOR_REPO_BRANCH --commitAuthor $env:APPVEYOR_REPO_COMMIT_AUTHOR --commitEmail $env:APPVEYOR_REPO_COMMIT_AUTHOR_EMAIL --commitMessage $env:APPVEYOR_REPO_COMMIT_MESSAGE --jobId $env:APPVEYOR_JOB_ID
+    $targetargs = """$env:test_dll_dir\Analyzer1.dll"" ""$env:test_dll_dir\Analyzer1.Test.dll"" -noshadow -appveyor"
 
+    $filter = "+[Analyzer1*]* -[Analyzer1.Test*]*"
+
+
+    & $opencover -register:user -target:$runner "-targetargs:$targetargs" "-filter:$filter" -output:opencoverCoverage.xml
+
+    & $coveralls --opencover -i opencoverCoverage.xml --repoToken $env:COVERALLS_REPO_TOKEN --commitId $env:APPVEYOR_REPO_COMMIT --commitBranch $env:APPVEYOR_REPO_BRANCH --commitAuthor $env:APPVEYOR_REPO_COMMIT_AUTHOR --commitEmail $env:APPVEYOR_REPO_COMMIT_AUTHOR_EMAIL --commitMessage $env:APPVEYOR_REPO_COMMIT_MESSAGE --jobId $env:APPVEYOR_JOB_ID
 
 
 deploy:
