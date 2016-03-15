@@ -67,8 +67,6 @@ test_script:
 
     $runner = (Resolve-Path "src\packages\xunit.runner.console.*\tools\xunit.console.x86.exe").ToString()
 
-    $coveralls = (Resolve-Path "src/packages/coveralls.net.*/tools/csmacnz.coveralls.exe").ToString()
-
     $targetargs = """Analyzer1.Test.dll"" -noshadow -appveyor"
 
     $filter = "+[Analyzer1*]* -[Analyzer1.Test*]*"
@@ -76,7 +74,10 @@ test_script:
 
     & $opencover -register:user -target:$runner "-targetargs:$targetargs" -targetdir:$env:test_dll_dir "-filter:$filter" -hideskipped:Filter -output:opencoverCoverage.xml
 
-    $env:Path = "C:\\Python34;C:\\Python34\\Scripts;$env:Path"
+
+    $env:Path = "C:\Python34;C:\Python34\Scripts;$env:Path"
+
+    python -m pip install --upgrade pip
 
     pip install codecov
 
