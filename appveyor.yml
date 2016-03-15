@@ -75,13 +75,11 @@ test_script:
     & $opencover -register:user -target:$runner "-targetargs:$targetargs" -targetdir:$env:test_dll_dir "-filter:$filter" -hideskipped:Filter -output:opencoverCoverage.xml
 
 
-    $env:Path = "C:\Python34;C:\Python34\Scripts;$env:Path"
-
-    python -m pip install --upgrade pip
-
-    pip install codecov
-
-    codecov -f "opencoverCoverage.xml"　-erroraction 'silentlycontinue'
+after_test:
+    - "SET PATH=C:\\Python34;C:\\Python34\\Scripts;%PATH%"
+    - python -m pip install --upgrade pip
+    - pip install codecov
+    - codecov -f "MyProject_coverage.xml"
 
 
 deploy:
