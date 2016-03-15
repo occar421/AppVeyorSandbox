@@ -67,7 +67,7 @@ test_script:
 - ps: >-
     $opencover = (Resolve-Path "src/packages/OpenCover.*/tools/OpenCover.Console.exe").ToString()
 
-    $runner = (Resolve-Path "src\packages\xunit.runner.console.*\tools\xunit.console.x86.exe").ToString()
+    $runner = (Resolve-Path "src/packages/xunit.runner.console.*/tools/xunit.console.x86.exe").ToString()
 
     $coveralls = (Resolve-Path "src/packages/coveralls.net.*/tools/csmacnz.coveralls.exe").ToString()
 
