@@ -4,8 +4,6 @@ environment:
   release_notes: 'Stunning New.'
   solution_path: src\Analyzer1.sln
   test_dll_dir: src\Analyzer1\Analyzer1.Test\bin\Release
-  COVERALLS_REPO_TOKEN:
-    secure: iYa1LgPg9YAHaD3zagivsEDqeAE9fCkzw2ykOrVc5q+PNSjpauiX6pTFk9TnokrS
 pull_requests:
   do_not_increment_build_number: true
 os: Visual Studio 2015
@@ -71,14 +69,18 @@ test_script:
 
     $coveralls = (Resolve-Path "src/packages/coveralls.net.*/tools/csmacnz.coveralls.exe").ToString()
 
-    $targetargs = """Analyzer1.dll"" ""Analyzer1.Test.dll"" -noshadow -appveyor"
+    $targetargs = """Analyzer1.Test.dll"" -noshadow -appveyor"
 
     $filter = "+[Analyzer1*]* -[Analyzer1.Test*]*"
 
 
     & $opencover -register:user -target:$runner "-targetargs:$targetargs" -targetdir:$env:test_dll_dir "-filter:$filter" -hideskipped:Filter -output:opencoverCoverage.xml
 
-    & $coveralls --opencover -i opencoverCoverage.xml --repoToken $env:COVERALLS_REPO_TOKEN --commitId $env:APPVEYOR_REPO_COMMIT --commitBranch $env:APPVEYOR_REPO_BRANCH --commitAuthor $env:APPVEYOR_REPO_COMMIT_AUTHOR --commitEmail $env:APPVEYOR_REPO_COMMIT_AUTHOR_EMAIL --commitMessage $env:APPVEYOR_REPO_COMMIT_MESSAGE --jobId $env:APPVEYOR_JOB_ID
+    $env:Path = "C:\\Python34;C:\\Python34\\Scripts;$env:Path"
+
+    pip install codecov
+
+    codecov -f "opencoverCoverage.xml"
 
 
 deploy:
