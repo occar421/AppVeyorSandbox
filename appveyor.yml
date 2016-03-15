@@ -8,10 +8,6 @@ environment:
     secure: iYa1LgPg9YAHaD3zagivsEDqeAE9fCkzw2ykOrVc5q+PNSjpauiX6pTFk9TnokrS
 pull_requests:
   do_not_increment_build_number: true
-branches:
-  only:
-  - master
-  - develop
 os: Visual Studio 2015
 configuration: Release
 platform: Any CPU
