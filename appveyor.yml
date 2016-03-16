@@ -81,7 +81,7 @@ test_script:
 
     pip install codecov
 
-    codecov -f "opencoverCoverage.xml"
+    &{codecov -f "opencoverCoverage.xml"}
 
 
 deploy:
