@@ -81,13 +81,7 @@ test_script:
 
     pip install codecov
 
-    $buf = $ErrorActionPreference
-
-    $ErrorActionPreference = "silentlycontinue"
-
-    codecov -f "opencoverCoverage.xml"
-
-    $ErrorActionPreference = $buf
+    &{codecov -f "opencoverCoverage.xml"} -ErrorAction SilentlyContinue
 
 
 deploy:
