@@ -79,7 +79,7 @@ after_test:
     - "SET PATH=C:\\Python34;C:\\Python34\\Scripts;%PATH%"
     - python -m pip install --upgrade pip
     - pip install codecov
-    - codecov -f "MyProject_coverage.xml"
+    - codecov -f "openCoverCoverage.xml"
 
 
 deploy:
