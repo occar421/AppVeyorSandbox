@@ -72,7 +72,7 @@ test_script:
     $filter = "+[Analyzer1*]* -[Analyzer1.Test*]*"
 
 
-    & $opencover -register:user -target:$runner "-targetargs:$targetargs" -targetdir:$env:test_dll_dir "-filter:$filter" -hideskipped:Filter -output:opencoverCoverage.xml
+    & $opencover -register:user -target:$runner "-targetargs:$targetargs" -targetdir:$env:test_dll_dir "-filter:$filter" -returntargetcode -hideskipped:All -output:opencoverCoverage.xml
 
 
 after_test:
