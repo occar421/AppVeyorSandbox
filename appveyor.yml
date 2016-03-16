@@ -16,41 +16,7 @@ assembly_info:
   assembly_file_version: '{version}'
   assembly_informational_version: '{version}'
 before_build:
-- ps: >-
-    $VERSION = $env:APPVEYOR_BUILD_VERSION
-
-    $STAGE = $env:stage
-
-
-    $vs = $VERSION -split "\."
-
-    $env:nupkg_version = $vs[0] + "." + $vs[1] + "." + $vs[2]
-
-    $env:is_prerelease = "false"
-
-    if($STAGE -ne "release"){ # prerelease
-        $env:nupkg_version = $env:nupkg_version + "-" + $STAGE
-
-        $env:is_prerelease = "true"
-    }
-
-
-    # rewrite
-
-    $nuspec = (ls $env:APPVEYOR_BUILD_FOLDER -Recurse).Where{ $_.Extension -eq ".nuspec"} | Select -First 1
-
-    [xml]$xml = Get-Content $nuspec.FullName
-
-    $xml.package.metadata.version = $env:nupkg_version
-
-    $xml.package.metadata.releaseNotes = $env:release_notes
-
-    $xml.Save($nuspec.FullName)
-
-
-    nuget restore $env:solution_path
-
-
+- ps: . .\before_build.ps1
 build:
   project: $(solution_path)
   verbosity: minimal
