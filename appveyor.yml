@@ -75,7 +75,7 @@ test_script:
     & $opencover -register:user -target:$runner "-targetargs:$targetargs" -targetdir:$env:test_dll_dir "-filter:$filter" -returntargetcode -hideskipped:All -output:opencoverCoverage.xml
 
 
-after_test:
+- cmd: >-
     - "SET PATH=C:\\Python34;C:\\Python34\\Scripts;%PATH%"
     - python -m pip install --upgrade pip
     - pip install codecov
